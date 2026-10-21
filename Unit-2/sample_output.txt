@@ -1,0 +1,15 @@
+SOCIAL NETWORK: FRIENDSHIP ADJACENCY MATRIX
+--------------------------------------------
+Users: Asha, Ravi, Neha, Om, Sara
+
+Adjacency Matrix (1 = friends, 0 = not directly connected):
+         Asha Ravi Neha   Om Sara
+Asha        0    1    1    0    0
+Ravi        1    0    0    1    0
+Neha        1    0    0    1    0
+Om          0    1    1    0    1
+Sara        0    0    0    1    0
+
+Are Asha and Ravi friends? Yes
+Are Asha and Sara friends? No
+Direct friends of Om: Ravi, Neha, Sara
