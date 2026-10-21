@@ -1,0 +1,25 @@
+UNIT 3: IMPLEMENTATION OF STACK AND QUEUE OPERATIONS USING LINKED LISTS
+
+Aim:
+To implement stack and queue operations using linked lists.
+
+Theory:
+A linked list consists of nodes. Each node contains data and a pointer to the next node. Unlike arrays, a linked list can grow dynamically as nodes are allocated.
+
+Stack:
+A stack follows LIFO (Last In, First Out). Push inserts a node at the top, pop removes the top node, peek shows the top element, and display prints all elements.
+
+Queue:
+A queue follows FIFO (First In, First Out). Enqueue inserts a node at the rear, dequeue removes a node from the front, front shows the first element, and display prints all elements.
+
+Case study:
+An editor's undo history can use a stack because the latest action is undone first. A service counter can use a queue because customers are generally served in arrival order.
+
+Algorithm summary:
+Stack PUSH: Create a node; link it to the current top; update top.
+Stack POP: If empty, report underflow; otherwise remove and delete top.
+Queue ENQUEUE: Create a node; if empty set front and rear; otherwise link after rear and update rear.
+Queue DEQUEUE: If empty, report underflow; otherwise remove front; if queue becomes empty also set rear to null.
+
+Conclusion:
+The program demonstrates stack and queue operations using dynamic linked-list nodes. Push/pop and enqueue/dequeue take O(1) time; display takes O(n) time.
