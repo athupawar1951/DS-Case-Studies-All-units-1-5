@@ -1,0 +1,23 @@
+UNIT 4 CASE STUDY
+DICTIONARY APPLICATION USING HASH TABLES
+
+Aim:
+To implement a dictionary where words and meanings are stored and retrieved using hashing with collision resolution.
+
+Theory:
+A hash table stores data in an array-like structure. A hash function converts a key (here, a word) into a table index. A collision occurs when two different words map to the same index.
+
+Collision resolution:
+This project uses separate chaining. Each table index stores a list of entries, so multiple words can share an index without overwriting one another.
+
+Main operations:
+1. Insert/update: Compute the word's hash index and add the word–meaning pair. If the word exists, update its meaning.
+2. Search: Compute the index and look through the entries at that index.
+3. Delete: Find the word in its chain and remove it.
+4. Display: Print all non-empty table positions and their chains.
+
+Real-life application:
+A digital glossary or dictionary needs to retrieve definitions quickly. Hashing can provide fast average lookup when keys are distributed across the table.
+
+Conclusion:
+The application demonstrates insertion, searching, updating, deletion, and collision handling in a hash table. Separate chaining safely stores multiple words at the same index.
