@@ -1,0 +1,40 @@
+UNIT 5 CASE STUDIES
+
+CASE STUDY A: GPS / NAVIGATION SYSTEM USING A WEIGHTED GRAPH
+
+Aim:
+To model a city map as a weighted graph and apply a core graph algorithm to find the shortest route.
+
+Theory:
+A graph consists of vertices and edges. In a city map, places such as a college, hospital, market, and bus station are vertices. Roads are edges, and their distances are weights. The program stores the graph as an adjacency list.
+
+Algorithm:
+Dijkstra's algorithm starts with distance zero at the source and infinity for other places. It repeatedly selects the unprocessed place with the smallest known distance and relaxes its outgoing roads. Parent pointers are used to reconstruct the shortest route.
+
+Applications:
+GPS navigation, delivery routing, network routing, and travel planning.
+
+Conclusion:
+A weighted graph models road connections naturally, and Dijkstra's algorithm can find shortest routes when road weights are non-negative.
+
+CASE STUDY B: HUFFMAN TREE FOR FREQUENCY-BASED ENCODING
+
+Aim:
+To demonstrate frequency-based text encoding using a Huffman tree.
+
+Theory:
+Huffman coding is a lossless compression technique. It counts symbol frequencies and repeatedly combines the two least-frequent nodes into a new node. Each left branch is assigned 0 and each right branch 1. This produces prefix-free variable-length codes; more frequent symbols often receive shorter codes.
+
+Algorithm:
+1. Count each character's frequency.
+2. Insert leaf nodes into a minimum-priority queue.
+3. Remove the two least-frequent nodes and combine them.
+4. Reinsert the combined node; repeat until one root remains.
+5. Traverse the tree to generate codes.
+6. Encode the input and decode it to verify correctness.
+
+ZIP/GZIP note:
+Huffman coding is a core concept in DEFLATE, which is used by common ZIP and GZIP implementations alongside LZ77 compression. The supplied C++ program demonstrates Huffman coding but does not itself create a standards-compliant ZIP/GZIP archive.
+
+Conclusion:
+The Huffman program demonstrates how symbol frequency can be used to generate compact prefix codes and recover the original text without loss.
